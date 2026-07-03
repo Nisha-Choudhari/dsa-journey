@@ -1,0 +1,28 @@
+class Rectangle {
+
+    double length;
+    double width;
+    double area;
+
+    // Default constructor
+    Rectangle() {
+        length = 1.0;
+        width = 1.0;
+    }
+    // Parameterized constructor
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+    void calculateArea() {
+        area = length * width;
+    }
+    void displayDetails() {
+        System.out.printf("Length : %.2f%n", length);
+        System.out.printf("Width : %.2f%n", width);
+        System.out.printf("Area : %.2f%n", area);
+    }
+}
+
+
+
